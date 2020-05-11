@@ -69,6 +69,15 @@
                   "arn:${aws_partition}:iam::*:role/${role_name}"
               ],
               "Effect": "Allow"
+          },
+          {
+              "Action": [
+                 "iam:GetRole"
+              ],
+              "Resource": [
+                  "${role_name}"
+              ],
+              "Effect": "Allow"
           }
    ]
 }
